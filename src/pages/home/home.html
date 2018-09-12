@@ -1,17 +1,25 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      <h2> {{ nombre }} </h2>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let user of users">
-      <h2>{{ user.nombres }}</h2>
-      <p>{{  user.celular_padre }}</p>
-    </ion-item>
-  </ion-list>
+  
+<ion-row style="border-bottom: groove;">
+    <ion-col col-4>
+      <ion-label >Acudiente</ion-label>
+    </ion-col>
+    <ion-col col-8>
+      <ion-label > {{ acudiente }} </ion-label>
+    </ion-col>
+</ion-row>
+
+<ion-row style="border-bottom: groove;">
+  {{ alumno }}
+</ion-row>
+  
 </ion-content>
